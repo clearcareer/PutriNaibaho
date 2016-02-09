@@ -1,0 +1,651 @@
+---
+layout: default
+page_template_color: red
+light_or_dark: dark
+navbar_brand: John
+full_name: John Smith
+email: example@example.com
+profilepic_path: profilepic.jpg
+profile_caption: Graphic Designer
+background_image_path: astronaut.jpg
+upload_resume_path: ''
+occupations:
+  - title: "I'm an Astronaut"
+  - title: "I'm an Albatraoz"
+  - title: "I'm a Superhero"
+goals:
+  - name: Travel
+    icon: plane
+    description: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.'
+  - name: Create
+    icon: star
+    description: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.'
+  - name: Inspire
+    icon: group
+    description: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.'
+education:
+  - number: 1
+    years: 2012-2014
+    degree: Bachelor of Arts
+    institution: University of Mars
+    description: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit.'
+  - number: 2
+    years: 2042-2022
+    degree: Master of Arts
+    institution: University of Neptune
+    description: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit.'
+work_experience:
+  - number: 1
+    years: 2012-2014
+    position: Senior Designer
+    company: Company A
+    description: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit.'
+  - number: 2
+    years: 2014-2016
+    position: Engineer
+    company: Company B
+    description: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit.'
+categories:
+  - name: Art
+  - name: Photography
+  - name: Graphics
+  - name: 3D
+skills:
+  - name: Javascript
+    level: 20
+  - name: HTML/CSS
+    level: 47
+  - name: Digital Marketing
+    level: 65
+  - name: Graphic Design
+    level: 90
+achievements:
+  - name: Expertise Award
+    description: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.'
+    icon: trophy
+  - name: Travel Award
+    description: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.'
+    icon: plane
+  - name: Star Award
+    description: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.'
+    icon: star
+  - name: Instagram Photographer
+    description: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.'
+    icon: instagram
+social_icons:
+  - name: Facebook
+    link: ''
+    icon: facebook
+  - name: Twitter
+    link: ''
+    icon: twitter
+  - name: Instagram
+    link: ''
+    icon: instagram
+  - name: Github
+    link: ''
+    icon: github
+---
+
+
+
+<!-- The #page-top ID is part of the scrolling feature - the data-spy and data-target are part of the built-in Bootstrap scrollspy function -->
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top" data-offset="66">
+    <!--[if lt IE 10]>
+        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+  
+    <!-- HERO START -->
+    <header id="home" class="hero" style="background-image: url('assets/images/{{ page.background_image_path }}');">
+        <div class="hero-body">
+            <div class="hero-text text-center">
+                <h1 class="editable">I'm John Smith</h1>
+                
+                <h1 class="small"><span id="js-rotating">
+                    {{ page.occupations[0].title }}
+                    {% for occupation in page.occupations offset:1 %}
+                       | {{ occupation.title }}  
+                    {% endfor %}
+                    
+                </span></h1>
+                
+                <p class="editable">Traveller, Adventurer, Drinker of Coffee</p>
+                
+                <div class="page-scroll">
+                    <a href="#profile" class="btn btn-lg btn-custom">
+                        More About Me
+                    </a>
+                </div>
+                <!-- //.page-scroll -->
+            </div>
+            <!-- //.hero-text -->
+        </div>
+        <!-- //.hero-body -->
+    </header>
+    <!-- //HERO END -->
+    
+    
+    <!-- NAVIGATION START -->
+    <nav id="navigation" class="navbar navbar-fixed-top center-menu" role="navigation">
+        <div class="container navbar-container">
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".berg-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                
+                <a class="navbar-brand visible-xs visible-sm" href="#page-top">{{ page.navbar_brand }}</a>
+            </div>
+            <!-- //.navbar-header -->
+            
+            <div class="navbar-collapse collapse berg-collapse">
+                <ul class="nav navbar-nav">
+                    <li class="page-scroll">
+                        <a href="#home">Home</a>
+                    </li>
+                    
+                    <li class="page-scroll">
+                        <a href="#profile">Profile</a>
+                    </li>
+                    
+                    <li class="page-scroll">
+                        <a href="#services">Goals</a>
+                    </li>
+                    
+                    <li class="page-scroll">
+                        <a href="#resume">Resume</a>
+                    </li>
+
+                    <li class="page-scroll">
+                        <a href="#portfolio">Portfolio</a>
+                    </li>
+                    
+                    <li class="page-scroll">
+                        <a href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- //.navbar-collapse -->
+        </div>
+        <!-- //.navbar-container -->
+    </nav>
+    <!-- //NAVIGATION END -->
+    
+    
+    <!-- PROFILE SECTION START -->
+    <section id="profile" class="section">
+        <div class="container section-wrapper">
+            <div class="section-content">
+                <div class="row">
+                    
+                    <!-- PROFILE PICTURE START -->
+                    <div class="col-md-4 hidden-xs hidden-sm match-height pp-wrapper">
+                        <div class="profile-picture style-two">
+                            <img src="assets/images/{{ page.profilepic_path }}" alt="profile picture" class="img-responsive" />
+                            
+                            <h4 class="title">{{ page.profile_caption }}</h4>
+                        </div>
+                    </div>
+                    <!-- //PROFILE PICTURE END -->
+                    
+                    <div class="col-md-8 match-height">
+
+                        <!-- PROFILE TEXT START -->
+                        <div class="profile-text padding-left-yes">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <h2 class="section-title editable">Hello, My Name is John.</h2>
+
+                                    <p class="editable">
+                                        John Smith. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+                                    </p>
+
+                                    <span class="divider"></span>
+
+                                    <p class="text-grey editable">
+                                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+                                    </p>
+
+                                    <p class="text-grey editable">
+                                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+                                    </p>
+                                </div>
+                                <!-- //.col-md-12 -->
+                            </div>
+                            <!-- //.row -->
+                        </div>
+                        <!-- //PROFILE TEXT END -->
+
+                        <!-- CONTACT DETAILS START -->
+                        <div class="contact-details padding-left-yes">
+                            <div class="row">
+                                <div class="col-sm-6 col-md-5">
+                                    <h4 class="editable">Contact Details</h4>
+
+                                    <ul class="list-unstyled text-grey">
+
+                                        <li class="editable">John Smith</li>
+                                        <li class="editable">123 Water Seven, Grand Line</li>
+                                        <li class="editable">+123 456 7890</li>
+                                        <li class="editable">hello@example.com</li>
+                                        <li class="editable">www.example.com</li>
+                                    </ul>
+                                </div>
+                                <!-- //.col-md-5 -->
+
+                                <div class="col-sm-6 col-md-7">
+                                    <a href="{{ page.upload_resume_path }}" class="btn btn-lg btn-custom">
+                                        <i class="icon-File-Download"></i> Download Resume
+                                    </a>
+                                </div>
+                                <!-- //.col-md-6 -->
+                            </div>
+                            <!-- //.row -->
+                        </div>
+                        <!-- //CONTACT DETAILS END -->
+
+                    </div>
+                    <!-- //.col-md-8 -->
+                </div>
+                <!-- //.row -->
+            </div>
+            <!-- //.section-content -->
+        </div>
+        <!-- //.container -->
+    </section>
+    <!-- //PROFILE SECTION END -->
+    
+    
+    
+    
+    <!-- SERVICES SECTION START -->
+    <section id="services" class="section lighter-bg">
+        <div class="container section-wrapper">
+            <div class="section-content">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2 text-center">
+                        <h2 class="section-title editable">What I'm Looking For</h2>
+
+                        <p class="section-subtitle editable">
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+                        </p>
+
+                        <span class="divider center"></span>
+                    </div>
+                    <!-- //.col-md-8 -->
+                </div>
+                <!-- //.row -->
+                
+                
+                <!-- SERVICES START -->
+                <div class="services">
+                    <div class="row">
+
+                        {% for goal in page.goals %}
+                        <div class="col-sm-4 col-md-4 item top match-height">
+                            <div class="inner-content">
+                                <p class="text-center">
+                                    <i class="fa fa-{{ goal.icon }} fa-3x colored-text"></i>
+                                
+                                    </p><h4 class="text-center">{{ goal.name }}</h4>
+                                <p></p>
+                            
+                                <p>
+                                    {{ goal.description }}
+                                </p>
+                            </div>
+                            <!-- //.inner-content -->
+                        </div>
+                        <!-- //.item -->
+                        {% endfor %}
+
+                        
+                    </div>
+                    <!-- //.row -->
+                </div>
+                <!-- //SERVICES END -->
+            </div>
+            <!-- //.section-content -->
+        </div>
+        <!-- //.container -->
+    </section>
+    <!-- //SERVICES SECTION END -->
+    
+    
+
+    
+    <!-- RESUME SECTION START -->
+    <section id="resume" class="section">
+        <div class="container section-wrapper dark">
+            <div class="section-content">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2 text-center">
+                        <h2 class="section-title editable">My Resume</h2>
+
+                        <p class="section-subtitle editable">
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+                        </p>
+
+                        <span class="divider center"></span>
+                    </div>
+                    <!-- //.col-md-8 -->
+                </div>
+                <!-- //.row -->
+                
+                <!-- EDUCATION START -->
+                <div class="row education">
+                    <div class="col-md-10 col-md-offset-1">
+                        <h3 class="editable">
+                            My Education
+                        </h3>
+                        
+                        <div class="panel-group resume" id="education">
+                       
+                            {% for item in page.education %}
+                            
+
+                            <div class="resume-item">
+                                <div class="resume-year">
+                                    <span class="resume-year">{{ item.years }}</span>
+                                </div>
+                                <!-- //.resume-year -->
+
+                                <div class="resume-btn">
+                                    <a href="#education{{ item.number }}" data-toggle="collapse" data-parent="#education"></a>
+                                </div>
+                                <!-- //.resume-btn -->
+
+                                <div class="panel">
+                                    <div class="panel-heading">
+                                        <div class="panel-title">
+                                            <h4 class="resume-title">{{ item.degree }} - {{ item.institution }}</h4>
+                                        </div>
+                                        <!-- //.panel-title -->
+                                    </div>
+                                    <!-- //.panel-heading -->
+
+                                    <div id="education{{ item.number }}" class="panel-collapse collapse">
+                                        <div class="panel-body text-grey">
+                                            <p>
+                                                {{ item.description }}
+                                            </p>
+                                        </div>
+                                        <!-- //.panel-body -->
+                                    </div>
+                                    <!-- //.panel-collapse -->
+                                </div>
+                                <!-- //.panel -->
+                            </div>
+                            <!-- //.resume-item -->
+
+                            
+                            {% endfor %}
+                            
+
+
+                             </div>
+                        <!-- //.panel-group -->
+                    </div>
+                    <!-- //.col-md-10 -->
+                </div>
+                <!-- //EDUCATION END -->
+
+                            
+            
+                <!-- WORK EXPERIENCE START -->
+                <div class="row work-experience">
+                    <div class="col-md-10 col-md-offset-1">
+                        <h3 class="editable">
+                            Work Experience
+                        </h3>
+                        
+                        
+                        <div class="panel-group resume" id="work">
+
+                            {% for item in page.work_experience %}
+                            <div class="resume-item">
+                                <div class="resume-year">
+                                    <span class="resume-year">{{ item.years }}</span>
+                                </div>
+                                <!-- //.resume-year -->
+
+                                <div class="resume-btn">
+                                    <a href="#work{{item.number}}" data-toggle="collapse" data-parent="#work"></a>
+                                </div>
+                                <!-- //.resume-btn -->
+
+                                <div class="panel">
+                                    <div class="panel-heading">
+                                        <div class="panel-title">
+                                            <h4 class="resume-title"> {{ item.position }} - {{ item.company }}</h4>
+                                        </div>
+                                        <!-- //.panel-title -->
+                                    </div>
+                                    <!-- //.panel-heading -->
+
+                                    <div id="work{{item.number}}" class="panel-collapse collapse in">
+                                        <div class="panel-body text-grey">
+                                            <p>
+                                                Responsibilities:
+                                                <br />
+                                                {{ item.description }}
+                                            </p>
+                                        </div>
+                                        <!-- //.panel-body -->
+                                    </div>
+                                    <!-- //.panel-collapse -->
+                                </div>
+                                <!-- //.panel -->
+                            </div>
+                            <!-- //.resume-item -->
+
+                            {% endfor %}
+
+                        </div>
+                        <!-- //.panel-group -->
+                    </div>
+                    <!-- //.col-md-10 -->
+                </div>
+                <!-- //WORK EXPERIENCE END -->
+            </div>
+            <!-- //.section-content -->
+        </div>
+        <!-- //.container -->
+    </section>
+    <!-- //RESUME SECTION END -->
+
+
+
+    
+
+    <!-- SKILLS SECTION START -->
+    <section id="skills" class="section lighter-bg">
+        <div class="container section-wrapper">
+            <div class="section-content">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2 text-center">
+                        <h2 class="section-title editable">Tangible Skills</h2>
+
+                        <p class="section-subtitle editable">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+
+                        <span class="divider center"></span>
+                    </div>
+                    <!-- //.col-md-8 -->
+                </div>
+                <!-- //.row -->
+                
+                <!-- BAR CHART START -->
+                <div class="row">
+
+                    {% for skill in page.skills %}
+                    <div class="col-sm-6 col-md-6">
+                        <div class="bar-chart">
+                            <div class="item">
+                                <h4>{{ skill.name }}</h4>
+
+                                <div class="bar">
+                                    <span class="percent">{{ skill.level }}</span>
+                                    <span class="item-progress" data-percent="{{ skill.level }}"></span>
+                                </div>
+                                <!-- //.bar -->
+                            </div>
+                            <!-- //.item -->
+                        </div>
+                        <!-- //.bar-chart -->
+                    </div>
+                    <!-- //.col-md-6 -->
+                    {% endfor %}
+                </div>
+                <!-- //BAR CHART END -->
+            </div>
+            <!-- //.section-content -->
+        </div>
+        <!-- //.container -->
+        
+    </section>
+    <!-- //KNOWLEDGE SECTION END -->
+    
+    
+    <!-- ACHIEVEMENTS SECTION START -->
+    <section id="achievements" class="section">
+        <div class="container section-wrapper">
+            <div class="section-content">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2 text-center">
+                        <h2 class="section-title editable">Achievements</h2>
+
+                        <p class="section-subtitle editable">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+
+                        <span class="divider center"></span>
+                    </div>
+                    <!-- //.col-md-8 -->
+                </div>
+                <!-- //.row -->
+                
+                <div class="row">
+                    <div class="col-md-6 col-md-offset-3">
+                        
+                        {% for achievement in page.achievements %}
+                        <!-- ACCOLADES START -->
+                        <div class="accolades">
+                            <div class="item">
+                                <i class="fa fa-{{ achievement.icon }}"></i>
+
+                                <div class="content">
+                                    <h3>{{ achievement.name }}</h3>
+
+                                    <p class="text-grey">{{ achievement.description }}</p>
+                                </div>
+                                <!-- //.content -->
+                            </div>
+                            <!-- //.item -->
+
+                            {% endfor %}
+
+                        </div>
+                        <!-- //ACCOLADES END -->
+
+                        <div class="bookmark text-grey text-center">
+                            <i class="icon-Bookmark"></i>
+                        </div>
+                        <!-- //.bookmark -->
+                    </div>
+                    <!-- //.col-md-6 -->
+                </div>
+                <!-- //.row -->
+            </div>
+            <!-- //.section-content -->
+        </div>
+        <!-- //.container -->
+    </section>
+    <!-- //ACCOLADES SECTION END -->
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <!-- CONTACT SECTION START -->
+    <section id="contact" class="section lighter-bg">
+        <div class="container section-wrapper">
+            <div class="section-content">
+                
+                
+                <div class="row">
+                    <div class="col-md-12">
+
+                        <!-- CONTACT DETAILS START -->
+                        <div class="contact-details text-center">
+                            
+                            <!-- //.speech-bubble -->
+
+                            <h2 class="editable">{{page.full_name}}</h2>
+
+                            <h4 class="text-grey editable"><a href="mailto:{{ page.email }}">{{page.email}}</a></h4>
+
+                            <span class="divider center"></span>
+                        </div>
+                        <!-- //CONTACT DETAILS END -->
+                    </div>
+                    <!-- //.col-md-12 -->
+                </div>
+                <!-- //.row -->
+            </div>
+            <!-- //.section-content -->
+        </div>
+        <!-- //.container -->
+    </section>
+    <!-- //CONTACT SECTION END -->
+    
+</body>
+
+<!-- FOOTER START -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="page-scroll">
+                        <a href="#page-top"><i class="icon-Arrow-Up"></i></a>
+                    </div>
+                    <!-- //.page-scroll -->
+                    
+                    <ul class="list-inline social-icons">
+                        {% for item in page.social_icons %}
+                        <li>
+                            <div class="item">
+                                <a href="{{ item.link }}" target="_blank"><i class="fa fa-{{ item.icon }}"></i></a>
+                            </div>
+                            <!-- //.item -->
+                        </li>
+                        {% endfor %}
+                        
+                    </ul>
+                </div>
+                <!-- //.col-md-12 -->
+            </div>
+            <!-- //.row -->
+            
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="copyright text-center">
+                        <p class="text-grey">&copy; 2016 <a href="http://www.clearcareer.ca" target="_blank">ClearCareer</a> by <a href="http://www.twitter.com/izzydoesizzy" target="_blank">Iskender Piyale-Sheard</a>.</p>
+                    </div>
+                    <!-- //.copyright -->
+                </div>
+                <!-- //.col-md-12 -->
+            </div>
+            <!-- //.row -->
+        </div>
+        <!-- //.container -->
+    </footer>
+    <!-- //FOOTER END -->

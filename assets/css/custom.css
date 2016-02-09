@@ -1,0 +1,25 @@
+.accolades > .item > i {
+    background-color: transparent;
+    /* color: inherit; */
+    border: 2px solid;
+}
+
+header.hero .hero-body .hero-text h1 {
+  letter-spacing: normal;
+}
+
+/* Portfolio Item - Hover Circle Link Styles 
+-----------------------------------------------*/
+
+.portfolio .item > .project-wrapper:hover > .project-link > a.external-link {
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+.lighter-bg {
+	background-color: #171717;
+}
+
+
+

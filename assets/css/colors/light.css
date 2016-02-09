@@ -1,0 +1,131 @@
+/* LIGHT TEMPLATE CSS STYLES
+---------------------------------------*/
+
+
+body {
+	background-color: #fff;
+	color: #666;
+}
+
+.lighter-bg {
+	background-color: #f9f9f9;
+}
+
+
+/* NAVBAR LIGHT STYLES 
+---------------------------------------*/
+
+.navbar.navbar-fixed-top {
+    background-color: #fff;
+    border-bottom: 1px solid #f5f5f5;
+}
+
+.navbar.navbar-fixed-top .navbar-container {
+    background-color: #fff;
+}
+
+.navbar.navbar-fixed-top .navbar-nav > li.active > a {
+    background-color: #fff;
+}
+
+.navbar.navbar-fixed-top .navbar-nav > li > a:hover {
+    background-color: #fff;
+    color: #171717;
+}
+
+.navbar.navbar-fixed-top .navbar-nav > li > a:focus {
+    background-color: #fff;
+    color: #171717;
+}
+
+.navbar.navbar-fixed-top .navbar-nav > li.active > a:hover {
+    background-color: #fff;
+}
+
+.navbar.navbar-fixed-top .navbar-nav > li.active > a:focus {
+    background-color: #fff;
+}
+
+/* PROFILE SECTION LIGHT STYLES 
+---------------------------------------*/
+
+#profile .pp-wrapper .profile-picture.style-two .title {
+    background-color: #fff;
+    border: 1px solid #ccc;
+}
+
+/* SKILLS SECTION LIGHT STYLES 
+---------------------------------------*/
+span.resume-year {
+    color: #fff;
+}
+
+.bar-chart > .item > .bar {
+    background-color: #eee;
+}
+
+.bar-chart > .item > .bar > .item-progress {
+    background-color: #aaa;
+}
+
+.bar-chart > .item > .bar > .percent {
+    box-shadow: 3px 3px 10px #aaa;
+}
+
+span.percent {
+    color: #fff;
+}
+
+/* RESUME SECTION LIGHT STYLES 
+---------------------------------------*/
+
+.panel-group.resume .resume-item .resume-btn > a.collapsed:before, .panel-group.resume .resume-item .resume-btn > a:before {
+    color: #666;
+    border: 1px solid;
+    background-color:#fff;
+	border-radius: 4px;
+}
+
+/* ACHIEVEMENTS SECTION LIGHT STYLES 
+---------------------------------------*/
+
+.accolades > .item:before {
+	border-left: 0;
+}
+
+/* PORTFOLIO SECTION LIGHT STYLES 
+---------------------------------------*/
+
+.portfolio .item > .project-wrapper:hover:before {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.project-wrapper {
+    color: white;
+    text-shadow: #000;
+}
+
+
+/* FOOTER SECTION LIGHT STYLES
+-----------------------------------------------*/
+
+.social-links a {
+	border: 1px solid #666;
+	border-radius:4px;
+}
+
+footer.footer ul.social-icons > li > .item a {
+    background-color: transparent;
+    color: #666;
+    border: 1px solid #999;
+    border-radius: 4px;
+}
+
+footer.footer ul.social-icons > li > .item {
+	background-color: #fff;
+	box-shadow: 0 3px 0 #f1f1f1;
+}
+
+footer.footer ul.social-icons>li>.item>a:hover {
+    color: #333;
+}
