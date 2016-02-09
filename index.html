@@ -97,7 +97,7 @@ social_icons:
 
   
     <!-- HERO START -->
-    <header id="home" class="hero" style="background-image: url('assets/images/{{ page.background_image_path }}');">
+    <header id="home" class="hero" style="background-image: url('{{ page.background_image_path }}');">
         <div class="hero-body">
             <div class="hero-text text-center">
                 <h1 class="editable">I'm Putri Klismianti</h1>
@@ -184,7 +184,7 @@ social_icons:
                     <!-- PROFILE PICTURE START -->
                     <div class="col-md-4 hidden-xs hidden-sm match-height pp-wrapper">
                         <div class="profile-picture style-two">
-                            <img src="assets/images/{{ page.profilepic_path }}" alt="profile picture" class="img-responsive" />
+                            <img src="{{ page.profilepic_path }}" alt="profile picture" class="img-responsive" />
                             
                             <h4 class="title">{{ page.profile_caption }}</h4>
                         </div>
